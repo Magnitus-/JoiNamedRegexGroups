@@ -5,6 +5,7 @@ module.exports = {
     base: Joi.string(),
     name: 'string',
     language: {
+        xregexp: 'Needs to be parsable by regex {{exp}}'
     },
     rules: [
         {
@@ -27,7 +28,7 @@ module.exports = {
 
                     if(result.error)
                     {
-                        return this.createError('string.xregexp', { v: value }, state, options);//result.error;
+                        return this.createError('string.xregexp', { v: value, exp: params.exp  }, state, options);//result.error;
                     }
                     else
                     {
@@ -36,7 +37,7 @@ module.exports = {
                 }
                 else
                 {
-                    return this.createError('string.xregexp', { v: value }, state, options);
+                    return this.createError('string.xregexp', { v: value, exp: params.exp }, state, options);
                 }
             }
         }
