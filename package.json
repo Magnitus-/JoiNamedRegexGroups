@@ -1,0 +1,25 @@
+{
+  "name": "joi-xregexp",
+  "version": "0.1.0",
+  "description": "Library to do validation on object constructed from named groups in a xregexp",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/Tractr/exec-sql"
+  },
+  "bugs": {
+    "url": "http://github.com/Tractr/exec-sql/issues",
+    "email": "eric_vallee2003@yahoo.ca"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Vallee (eric_vallee2003@yahoo.ca)",
+  "license": "MIT",
+  "dependencies": {
+    "xregexp": "3.x",
+    "joi": "9-beta"
+  },
+  "devDependencies": {
+  }
+}
