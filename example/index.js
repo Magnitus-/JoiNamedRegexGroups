@@ -11,6 +11,8 @@ var validator = Joi.string().xregexp('^(?<x>\\d+),(?<y>\\d+)$', namedGroups, mat
 
 var test = "10,10";
 var test2 = "20,30";
+var test3 = "abc";
 
 console.log(Joi.validate(test, validator));
 console.log(Joi.validate(test2, validator));
+console.log(Joi.validate(test3, validator));

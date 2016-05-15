@@ -24,16 +24,7 @@ module.exports = {
                     params.namedGroups.forEach(function(key) {
                         filteredMatch[key] = match[key];
                     });
-                    var result = Joi.validate(filteredMatch, params.test);
-
-                    if(result.error)
-                    {
-                        return this.createError('string.xregexp', { v: value, exp: params.exp  }, state, options);//result.error;
-                    }
-                    else
-                    {
-                        return result.value;
-                    }
+                    return Joi.validate(filteredMatch, params.test);
                 }
                 else
                 {
