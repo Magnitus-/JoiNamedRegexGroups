@@ -5,16 +5,16 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/Tractr/exec-sql"
+    "url": "https://github.com/Magnitus-/JoiNamedRegexGroups"
   },
   "bugs": {
-    "url": "http://github.com/Tractr/exec-sql/issues",
-    "email": "eric_vallee2003@yahoo.ca"
+    "url": "https://github.com/Magnitus-/JoiNamedRegexGroups/issues",
+    "email": "eric_vallee@webificservices.com"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Eric Vallee (eric_vallee2003@yahoo.ca)",
+  "author": "Eric Vallee (eric_vallee@webificservices.com)",
   "license": "MIT",
   "dependencies": {
     "xregexp": "3.x",
